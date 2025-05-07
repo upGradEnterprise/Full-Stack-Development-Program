@@ -1,0 +1,31 @@
+Unit Testing:
+* Isolation - should be isolated from external dependencies like database, files, network. Mocking & Stubbing
+* Automation - they can be run repeatedly without manual intervention. Allows frequent testing & early detection of defects
+* Fast Execution - executes quickly. Developers can save time, less debugging effort
+* Deterministic - always produces the same result for the given input
+
+TDD [Test-Driven Development]:
+* Testing Simultaneously while Developing
+* Development Life-Cycle - "Red, Green, Refactor" Cycle
+
+Red: Write a Failing Test
+Green: Write a Passing Test
+Refactor: Write a Improved Code
+
+* Clear Requirements: think about the requirements before you test
+* Testable Code: you are designing the code with testing in mind from the beginning
+* Improved Design: think about the design to make improvements
+* Reduced Bugs: writing tests early & often reduces bugs
+* Confidence: passing tests gives you confidence that your code is working correctly
+
+Examples:
+1. Creating a Simple Email Validator
+2. Implementing a Stack Data Structure
+3. Building a Basic Authentication System
+
+1. Implement a BankAccount class
+	Red: 	Test that asserts that a newly created BankAccount has a balance less than 
+		minimum balance
+	Green:	Implement the BankAccount class with a Constructor that validates all inputs
+	Refactor: Add method for PIN Validation before deposit & withdraw
+	
