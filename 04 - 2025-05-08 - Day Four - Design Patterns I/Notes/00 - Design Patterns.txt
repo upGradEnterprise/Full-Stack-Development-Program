@@ -97,7 +97,15 @@ Which to use?
 		simplify the creation of different object types
 
 
-Prototype
-when the Object creation is a Costly affair, requires lot of resources
-
-Singleton
+* Prototype:
+	* 	used when the Object creation is a costly affair and requires a lot of time and resources and 
+		you have a similar object already existing.
+	*	mechanism to copy the original object to a new object and then modify it according to our needs
+	* 	uses java cloning to copy the object
+** Example:
+Furniture Manufacturing:
+Problem: 	Creating custom furniture from scratch for each order is time-consuming and inefficient
+Prototype: 	The company maintains prototypes of popular designs (e.g., a basic sofa design)
+Cloning: 	When a customer orders a similar sofa, the company clones the prototype,
+	 	making modifications like changing fabric, size, or adding features
+Benefits: 	This approach saves time, resources, and ensures consistency across similar products
