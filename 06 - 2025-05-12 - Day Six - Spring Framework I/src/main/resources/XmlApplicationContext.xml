@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="movie01" class="com.zeta.spring.ioc.bean.Movie" init-method="setup" destroy-method="teardown">
+        <property name="language" value="Hindi" />
+        <property name="name" value="Sholay" />
+        <property name="cast" value="Sanjeev, Dharmendra, Amitabh, Jaya, Hema, Amjad" />
+        <property name="director" value="Ramesh Sippy" />
+        <property name="release" value="15-08-1975" />
+    </bean>
+
+    <bean id="movie02" class="com.zeta.spring.ioc.bean.Movie" init-method="setup" destroy-method="teardown">
+        <property name="language" value="Telugu" />
+        <property name="name" value="RRR" />
+        <property name="cast" value="NTR Jr., Ram Charan, Alia Bhatt, Ajay Devgn" />
+        <property name="director" value="SS Rajamouli" />
+        <property name="release" value="24-Mar-2022" />
+    </bean>
+
+    <bean id="movie03" class="com.zeta.spring.ioc.bean.Movie" init-method="setup" destroy-method="teardown">
+        <property name="language" value="Tamil" />
+        <property name="name" value="Maari 2" />
+        <property name="cast" value="Dhanush, Sai Pallavi" />
+        <property name="director" value="Balaji Mohan" />
+        <property name="release" value="21-12-2018" />
+    </bean>
+
+    <bean id="movies" class="com.zeta.spring.ioc.bean.Movies">
+        <property name="movieList">
+            <list>
+                <ref bean="movie01" />
+                <ref bean="movie02" />
+                <ref bean="movie03" />
+            </list>
+        </property>
+    </bean>
+
+</beans>

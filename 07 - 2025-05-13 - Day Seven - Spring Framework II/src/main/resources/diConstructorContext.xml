@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+              http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+        <bean id="manager" class="com.zeta.spring.di.constructor.bean.Manager">
+            <constructor-arg type="double" name="salary" value="50000.0" />
+        </bean>
+
+        <bean id="teamLead" class="com.zeta.spring.di.constructor.bean.TeamLead">
+            <constructor-arg type="double" name="salary" value="3000.0" />
+            <constructor-arg type="com.zeta.spring.di.constructor.bean.Manager" name="manager" ref="manager" />
+        </bean>
+
+</beans>
