@@ -1,0 +1,86 @@
+Framework?
+* Set of Reusable Software Components
+* Set of Rules & Guidelines
+* Has a Pre-defined Project Structure
+
+Few Java Frameworks:
+* Spring
+* Hibernate
+* JMS [Java Messaging Service]
+* Struts
+* Blade
+* JUnit
+* Play
+
+Types of Frameworks:
+1. Web Application Framework
+2. Mobile Application Framework
+3. Front-end Framework
+4. Back-end Framework
+5. Testing Framework
+6. Game Development Framework
+7. Machine Learning [ML] Framework
+8. Enterprise Application Framework
+9. Graphical User Interface [GUI] Framework
+
+Ruby On Rails
+Django
+
+JS: Angular, React, Express, Next, Nest, Vue, Fastify, Nuxt, Backbone
+
+Benefits:
+1. Efficiency
+2. Speed
+3. Consistency
+4. Best Practice
+5. Standardisation
+6. Simplification
+7. Community Support
+8. Security
+9. Reliability
+10. Convention over Configuration
+11. Scalability
+12. Interoperability
+
+
+Spring Framework:
+* Java Platform that provides infrastructure support for developing Java Applications
+* Spring handles the infrastructure so you can focus on business logic of your Application
+* Handles Dependencies
+* Executes Database Transaction without having to deal with Transaction API
+
+Spring Core:
+1. Dependency Injection (DI)
+2. Inversion of Control (IoC)
+
+Spring Container:
+* Responsible for creating & managing the Lifecycle & Configuration of Application Objects (Bean)
+* Initializing the Beans
+* Writing Beans
+* Configuring Beans
+
+Two Types of Containers
+1. BeanFactory
+2. ApplicationContext
+
+Configuring the Beans [Configuration Metadata]:
+1. XML-based Configuration: Traditional way of defining beans & dependencies in XML file
+2. Annotation-based Configuration: Uses Annotations in Java Class to define beans & dependencies
+
+Spring Bean:
+* Fully Qualified Bean Class
+* Bean Behavior [Lifecycle, Callback Functions, Scope]
+* Bean Dependencies [Injecting one bean in another]
+
+Initialization Method: [init-method]: Calls a Method after constructing a Bean
+Destroy Method: [destroy-method]: Calls a Method before destroying a Bean
+
+Life-Cycle of a Bean:
+* Interface: InitializingBean & DisposableBean
+	InitializingBean: afterPropertySet: executes after initializing a bean
+	DisposableBean: destroy: executes before destroying a bean
+* Annotation
+
+
+
+
